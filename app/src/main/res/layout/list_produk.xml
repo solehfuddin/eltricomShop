@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/produk_txt_namaproduk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Produk"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/produk_img_gambar"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:background="@drawable/not_available"
+                android:layout_below="@+id/produk_txt_namaproduk"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/produk_txt_rp"
+                android:layout_width="match_parent"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/list_row_end_color"
+                android:textSize="15dp"
+                android:text="Rp "
+                android:layout_alignBaseline="@+id/produk_txt_quantity"
+                android:layout_alignBottom="@+id/produk_txt_quantity"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="32dp"
+                android:layout_marginEnd="32dp" />
+
+            <TextView
+                android:id="@+id/produk_txt_harga"
+                android:layout_width="match_parent"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/list_row_end_color"
+                android:textSize="15dp"
+                android:text="Harga Produk"
+                android:layout_alignBaseline="@+id/produk_txt_rp"
+                android:layout_alignBottom="@+id/produk_txt_rp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp" />
+
+            <TextView
+                android:id="@+id/produk_txt_quantity"
+                android:layout_width="match_parent"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp"
+                android:text="Qty Produk"
+                android:layout_marginLeft="250dp"
+                android:layout_marginStart="250dp"
+                android:layout_below="@+id/produk_img_gambar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/produk_txt_spesifikasi"
+                android:layout_width="match_parent"
+                android:paddingTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Spesifikasi Produk"
+                android:layout_below="@+id/produk_txt_harga"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

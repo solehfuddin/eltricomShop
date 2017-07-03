@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/riwayat_id_pesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="ID Pesanan"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/riwayat_barang_pesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Nama Produk"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/riwayat_id_pesanan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/riwayat_jumlah_pesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Jumlah Produk"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/riwayat_barang_pesanan"
+        android:layout_alignBottom="@+id/riwayat_barang_pesanan"
+        android:layout_toRightOf="@+id/riwayat_barang_pesanan"
+        android:layout_toEndOf="@+id/riwayat_barang_pesanan"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+    <TextView
+        android:id="@+id/riwayat_expedisi_pesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Expedisi"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/riwayat_jumlah_pesanan"
+        android:layout_alignBottom="@+id/riwayat_jumlah_pesanan"
+        android:layout_toRightOf="@+id/riwayat_jumlah_pesanan"
+        android:layout_toEndOf="@+id/riwayat_jumlah_pesanan"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+
+    <TextView
+        android:id="@+id/riwayat_tanggal_pesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Tanggal Pesan"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/riwayat_jumlah_pesanan"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/riwayat_status_pesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Status Pesan"
+        android:textColor="@color/list_divider"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/riwayat_jumlah_pesanan"/>
+
+</RelativeLayout>

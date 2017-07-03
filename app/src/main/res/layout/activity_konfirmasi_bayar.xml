@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:weightSum="1"
+    tools:context="com.sofudev.eltricom.KonfirmasiBayarActivity">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/konfirmasi_input_idpembelian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/konfirmasi_txt_idpembelian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ID Pembelian"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/konfirmasi_input_jumlahtransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/konfirmasi_txt_jumlahtransfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jumlah Transfer"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:background="@drawable/not_available"
+            android:id="@+id/konfirmasi_img_buktitransfer" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/konfirmasi_btn_bukti"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:background="@color/colorAccent"
+            android:text="Pilih Bukti Transfer" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/konfirmasi_btn_kirim"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"
+            android:background="@color/list_row_end_color"
+            android:text="Kirim Konfirmasi" />
+
+</LinearLayout>

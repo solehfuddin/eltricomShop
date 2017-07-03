@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_pembelian"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="Pembelian" />
+        <item
+            android:id="@+id/nav_riwayat"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="Riwayat" />
+    </group>
+
+    <item android:title="Layanan">
+        <menu>
+            <item
+                android:id="@+id/nav_testimonial"
+                android:icon="@drawable/ic_comment_black_24dp"
+                android:title="Konfirmasi Barang" />
+        </menu>
+    </item>
+</menu>
